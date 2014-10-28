@@ -1,0 +1,43 @@
+0.  BMPs support from 2^1 (1 bpp format) to 2^32 (32 bpp), GIFs support 256 colors (8 bpp), JPEGs 2^24 colors (24 bpp) , PNG support from 2^24 (24 bpp) to 2^32 colors (32 bpp).
+1.  GIFs
+2.  Lossy involves "losing" or deleting portions of the file to compress it, and is often used for multimedia. Lossless does not delete anything and is used for text and data files.
+3.  JPEG
+4.  The program's location in memory is simply marked as free(forgets pointers/fills them with null), allowing it to be overwritten, but not overwriting it.
+5.  Overwrite the file in memory. (An even higher probability would be to destroy the hard drive).
+6.  Defines different types of ints having different widths.
+7.  Allows you to deifine the width of ints you want to use.
+8.  BYTE = 1 byte, DWORD = 4 bytes, LONG = 4 bytes, WORD = 2 bytes.
+9.  BM in ASCII
+10. bfSize is the size of the bitmap file and biSizeImage is the size of image in bytes.
+11. If biHeight is negative, the bitmap is a top-down DIB and its origin is the upper-left corner.
+12. biBitCount
+13. It could return null if you are unable to access, create, or edit files in that folder, etc.
+14. Because we only want to read each thing once, and this allows us to use fread's return value in a boolean condition.
+15. 3
+16. fseek moves the file position indicator a certain distance. positive inputs correspond to forward movement.
+17. The current location of the file position indicator.
+18. Milo Banana dun it.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

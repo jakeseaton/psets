@@ -1,0 +1,41 @@
+0.  pneumonoultramicroscopicsilicovolcanoconiosis is an extremely long word for the lung disease called by inhaling very fine sand and dust.
+    It is the longest word in the english language.
+1.  getrusage returns resource usage for the input "who", which in this case is the calling process,  which
+    is the sum of resources used by all threads in the process.
+2.  There are 16 members of the struct rusage. They are:
+               struct timeval ru_utime; 
+               struct timeval ru_stime; 
+               long   ru_maxrss;        
+               long   ru_ixrss;         
+               long   ru_idrss;         
+               long   ru_isrss;         
+               long   ru_minflt;        
+               long   ru_majflt;        
+               long   ru_nswap;        
+               long   ru_inblock;       
+               long   ru_oublock;       
+               long   ru_msgsnd;        
+               long   ru_msgrcv;        
+               long   ru_nsignals;      
+               long   ru_nvcsw;         
+               long   ru_nivcsw;  
+3.  This allows calculate to use the arrow operator instead of the star and dot operator which cleans up the code.
+4.  Main opens the file to be spell checked and points to it with the variable fp. This variable is passed into fgetc to store the current character as an int in the variable c.
+    As long as this is not the end of file character, the for loop iterates over the file one character at a time, using the array word and the variable index to keep track of the current word, and location in that word.
+    Main then calls the check function we have to write to check the spelling of the word against the loaded dictionary.
+    If mispelled, main will print the word and update the variables keeping track of mispellings, before returning index to zero to prepare for the next word.
+5.  fscanf is used to verify that a file contains certain strings, and would not recognize mispelled words or incorrect characters, which is the whole purpose of speller.
+    fgetc can take in more than just alphabetic characters.
+6.  Check and load are constant so that they are not accidentally (or intentionally) changed by a function they are passed into. 
+7.  I used a hash table of pointers to linked lists. Each node in the linked list contains an array of chars in which to store a word, and a pointer to the next node.
+8.  It took more than .2 to check austinpowers.txt the first time i got it working, so vere long compared to .06 finished.
+9.  I changed the initial size of the hash table to decrease the wasted memory, and improved the hash function to increase effeciency.
+    I got rid of the search helper function I had written previously and integrated it into check.
+    I moved various things in and out of loops to eliminate uneeded actions.
+    I eliminated memory leads.
+10. The hash function seems rather ineffecient and I'm having trouble finding alternatives on the internet. 
+    This is making my load and check functions very slow. I also can't seem to perfect unload.
+
+9. What kinds of changes, if any, did you make to your code over the course of the week in order to improve its performance?
+
+10. Do you feel that your code has any bottlenecks that you were not able to chip away at?

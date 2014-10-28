@@ -1,0 +1,21 @@
+//Get Message
+        string message;
+        do
+        //Encode
+        word = word[i] - key
+        
+        
+        isalpha('z') = true
+        isupper('z') = false
+        islower('z') = true
+        
+       convert between ASCII and int
+       convert back
+       
+       different codes for upper and lower
+       
+       isupper/islower preserve case
+isalpha must be true to advance to the next
+i = position in plaintext
+j = position in key
++kj modulo strlen(k)
